@@ -6,11 +6,13 @@ import { createStore } from 'redux'
 import reducers from './reducers'
 
 import { Header } from './components/common'
+import LibraryList from './components/LibraryList'
 
 const App = () =>
   <Provider store={createStore(reducers)}>
     <View>
       <Header>Tech Stack</Header>
+      <LibraryList />
     </View>
   </Provider>
 
