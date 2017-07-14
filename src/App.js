@@ -5,9 +5,13 @@ import { createStore } from 'redux'
 
 import reducers from './reducers'
 
+import { Header } from './components/common'
+
 const App = () =>
   <Provider store={createStore(reducers)}>
-    <View />
+    <View>
+      <Header>Tech Stack</Header>
+    </View>
   </Provider>
 
 export default App
